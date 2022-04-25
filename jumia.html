@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">       
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/260b9cb5ee.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" type="text/css" href="jumia.css">
+    <title>Jumia Nigeria</title>
+</head>
+<body>
+                        <!-- Navigation Codes -->
+    <nav class="navbar navbar-expand-md bg-color nav-color sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img   class="img-responsive" src="images/HomePageImages/jumiaLogoDark.png" alt="Jumia logo"></a>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dataCollaspe">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Selection Category for narrow searches -->
+            <form class="form-inline">
+            <select name="#" id="selectOptions">
+                    <option value="All Categories">All Categories</option>
+                    <option value="Food">Food</option>
+                    <option value="Home Appliance">Home Appliance</option>
+                    <option value="Computer & Office">Computer & Office</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Health">Health</option>
+                    <option value="Male Fashion">Male Fashion</option>
+                    <option value="Female Fashion">Female Fashion</option>
+                    <option value="Mobile Phones & Telecommunication">Mobile Phones & Telecommunication</option>
+                    <option value="Jewelry & Accessories">Jewelry & Accessories</option>
+                    <option value="Children's Wear">Children's Wear</option>
+                    <option value="Video Games">Video Games</option>
+                </select>
+            <!-- Search bar -->
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Products, brands and categories" aria-label="Search" name="searchInput" id="searchInput">
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+            <!-- Navbar Navigation keys -->
+            <div class="collaspe navbar-collapse" id="dataCollaspe">
+                <ul class="navbar-nav mr-auto">
+                    <!-- Account Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">
+                              <button class="btn btn-warning">Sign In</button>
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">My Account</a>
+                          <a class="dropdown-item" href="#">Orders</a>
+                          <a class="dropdown-item" href="#">Saved Items</a>
+                        </div>
+                    </li>
+                    
+                    <!-- Help Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Help Center</a>
+                          <a class="dropdown-item" href="#">Place & Track</a>
+                          <a class="dropdown-item" href="#">Order Cancellation</a>
+                          <a class="dropdown-item" href="#">Returns & Refunds</a>
+                          <a class="dropdown-item" href="#">Payment & Jumia Account</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">
+                              <button class="btn btn-warning">Live Chat</button>
+                          </a>
+                        </div>
+                    </li>
+                    <!-- Cart Menu -->
+                    <li class="nav-item">
+                        <!-- Do not forget to add the Cart icon -->
+                        <a href="#" class="nav-link">Cart</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Side bar -->
+    <div class="sideBar sticky-top">
+        <ul>
+            <!-- User -->
+            <li>
+                <a href="#">
+                    <span><i class='fa fa-user-o'aria-hidden="true"></i>&nbsp;</span>
+                  </a>
+            </li>
+            <!-- View -->
+            <li>
+                <a href="#">
+                    <span><i class='fa fa-eye'aria-hidden="true"></i>&nbsp;</span>
+                </a>
+            </li>
+            <!-- Connect -->
+            <li>
+                <a href="#">
+                    <span><i class='fa fa-handshake-o'aria-hidden="true"></i>&nbsp;</span>
+                </a>
+            </li>
+            <!-- Liked -->
+            <li>
+                <a href="#">
+                    <span><i class='fa fa-heart-o'aria-hidden="true"></i>&nbsp;</span>
+                </a>
+            </li>
+            <!-- International -->
+            <li>
+                <a href="#">
+                    <span><i class='fa fa-plane'aria-hidden="true"></i>&nbsp;</span>
+                </a>
+            </li>
+            <!-- Orders -->
+            <li>
+                <a href="#">
+                    <span><i class='fa fa-star'aria-hidden="true"></i>&nbsp;</span>
+                </a>
+            </li>
+            <!-- Downloads -->
+            <li>
+                <a href="#">
+                    <span><i class='fa fa-download'aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <!-- Coupons -->
+            <li>
+                <a href="#">
+                    <span><i class='fa fa-ticket'aria-hidden="true"></i>&nbsp;</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+                          <!-- Shall we begin the gaddamned STRUGGLEEEEEEEEEEEEEEEEEEEE -->
+    <!-- 001 -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- CATEGORIES -->
+            <div class="col-md-2">
+                <ul class="catTolu">
+                    <li>
+                        <a href="#"><i class="fa fa-apple fa-fw" aria-hidden="true"></i>&nbsp;Supermarket</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i>&nbsp;Health & Beauty</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home & Office</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;Phones & Tablets</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;Computing</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i>&nbsp;Electronics</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-suitcase" aria-hidden="true"></i></i>&nbsp;Fashion</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-child" aria-hidden="true"></i>&nbsp;Baby Products</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp;Gamings</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-futbol-o" aria-hidden="true"></i>&nbsp;Sporting Goods</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;Automobiles</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-binoculars" aria-hidden="true"></i>&nbsp;Other Categories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CAROUSEL -->
+            <div class="col-md-7">
+                <div class="carousel slide" id="001Slider" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#001Slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#001Slider" data-slide-to="1"></li>
+                        <li data-target="#001Slider" data-slide-to="2"></li>
+                        <li data-target="#001Slider" data-slide-to="3"></li>
+                        <li data-target="#001Slider" data-slide-to="4"></li>
+                        <li data-target="#001Slider" data-slide-to="5"></li>
+                        <li data-target="#001Slider" data-slide-to="6"></li>
+                        <li data-target="#001Slider" data-slide-to="7"></li>
+                    </ul>
+                
+                    <!-- Carousel Content -->
+                    <div class="carousel-inner">
+                        <!-- 0 -->
+                        <div class="carousel-item active">
+                            <a href="#"><img class="img-fluid" src="images/HomePageImages/carousel1.gif" alt="techWeek" width="100%" height="100%"></a>
+                        </div>
+                        <!-- 1 -->
+                        <div class="carousel-item">
+                            <a href="#"><img class="img-fluid" src="images/HomePageImages/carousel2.jpg" alt="UnileverStore"></a>
+                        </div>
+                        <!-- 2 -->
+                        <div class="carousel-item">
+                            <a href="#"><img class="img-fluid" src="images/HomePageImages/carousel3.jpg" alt="freeDelivery"></a>
+                        </div>
+                        <!-- 3 -->
+                        <div class="carousel-item">
+                            <a href="#"><img class="img-fluid" src="images/HomePageImages/carousel4.jpg" alt="flashSales"></a>
+                        </div>
+                        <!-- 4 -->
+                        <div class="carousel-item">
+                            <a href="#"><img class="img-fluid" src="images/HomePageImages/carousel5.gif" alt="techWeek"></a>
+                        </div>
+                        <!-- 5 -->
+                        <div class="carousel-item">
+                            <a href="#"><img class="img-fluid" src="images/HomePageImages/carousel6.gif" alt="techWeek"></a>
+                        </div>
+                        <!-- 6 -->
+                        <div class="carousel-item">
+                            <a href="#"><img class="img-fluid" src="images/HomePageImages/carousel7.jpg" alt="fashionBeauty"></a>
+                        </div>
+                        <!-- 7 -->
+                        <div class="carousel-item">
+                            <a href="#"><img class="img-fluid" src="images/HomePageImages/carousel8.jpg" alt="jumiaComNg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- rJUMIA -->
+            <div class="col-md-3 rJUMIA">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="#">
+                                <img class="img-fluid" src="images/HomePageImages/R1Jumia.gif" alt="pickUpStations">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="#">
+                                <img class="img-fluid" src="images/HomePageImages/R2Jumia.gif" alt="jumiaPrime">
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jumia Personal Packages -->
+    <div class="container-fluid Packages">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="img-fluid" src="images/icons/icons1.png" alt="freeDelivery"> Free Delivery
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="img-fluid" src="images/icons/icons2.png" alt="officialStore"> Official Store
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="img-fluid" src="images/icons/icons3.png" alt="borrowMoney"> Borrow Money
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="img-fluid" class="img-fluid" src="images/icons/icons4.png" alt="jumiaFood"> Borrow Money
+                </a>
+            </div>
+        </div>
+    </div>
+
+                                <!-- Midsized sedan lol -->
+    <!-- Shop From Our Collections -->
+    <div class="container-fluid SFOCollections">
+        <div class="row">
+            <h3>Shop From Our Collections</h3>
+        </div>
+        <div class="row SFOCollectionsRow">
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/Stay Connected.png" alt="Stay Connected">
+                    <div class="card-body">
+                        <p class="card-text text-center">Stay Connected</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/Mobile Accessories.png" alt="Mobile Accessories">
+                    <div class="card-body">
+                        <p class="card-text text-center">Mobile Accessories</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/Work From Anywhere.png" alt="Work From Anywhere">
+                    <div class="card-body">
+                        <p class="card-text text-center">Work From Anywhere</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/Computer Accessories.png" alt="Computer Accessories">
+                    <div class="card-body">
+                        <p class="card-text text-center">Computer Accessories</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/smart homes.png" alt="Smart Homes">
+                    <div class="card-body">
+                        <p class="card-text text-center">Smart Homes</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/gamers cave.png" alt="Gamers Cave">
+                    <div class="card-body">
+                        <p class="card-text text-center">Gamers Cave</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/best home appliances.png" alt="Best Home Appliance">
+                    <div class="card-body">
+                        <p class="card-text text-center">Best Home Appliance</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/power up.png" alt="Power Up">
+                    <div class="card-body">
+                        <p class="card-text text-center">Power Up</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/half price store.png" alt="Half Price Store">
+                    <div class="card-body">
+                        <p class="card-text text-center">Half Price Store</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/iPhones, iOS Devices.png" alt="iPhones, iOS Devices">
+                    <div class="card-body">
+                        <p class="card-text text-center">iPhones, iOS Devices</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/home entertainment.png" alt="Home Entertainment">
+                    <div class="card-body">
+                        <p class="card-text text-center">Home Entertainment</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/shop from our collection/tech on a budget.png" alt="Tech On A Budget">
+                    <div class="card-body">
+                        <p class="card-text text-center">Tech On A Budget</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tech Brand -->
+    <div class="container-fluid techBrand">
+        <div class="row">
+            <h3>Tech Brand</h3>
+        </div>
+        <div class="row techBrandRow">
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/umidigi.png" alt="Umidigi">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/oraimo.png" alt="Oraimo">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/samsung.png" alt="Samsung">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/fitbit.png" alt="Fitbit">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/mi.png" alt="MI">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/anker.png" alt="Anker">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/edifier.png" alt="Edifier">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/qcy.png" alt="Qcy">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/skyrun.png" alt="skyRun">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/tcl.png" alt="Tcl">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/hp.png" alt="hp">
+                </a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <a href="#">
+                    <img class="img-fluid" src="images/Tech Brand/all-brands.png" alt="All Brands">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stay Connected -->
+    <div class="container-fluid stayConnected">
+        <div class="row">
+            <h3>Stay Connected</h3>
+        </div>
+        <div class="row stayConnectedRow">
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/android phones.jpg" alt="Android Phones">
+                    <div class="card-body">
+                        <p class="card-text text-center">Android Phones</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/iphones.png" alt="iPhones">
+                    <div class="card-body">
+                        <p class="card-text text-center">iPhones</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/cellphones.png" alt="Cell Phones">
+                    <div class="card-body">
+                        <p class="card-text text-center">Cell Phones</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/android tablets.png" alt="Android Tablets">
+                    <div class="card-body">
+                        <p class="card-text text-center">Android Tablets</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/ipad.png" alt="iPads">
+                    <div class="card-body">
+                        <p class="card-text text-center">iPads</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/renewed.png" alt="Renewed">
+                    <div class="card-body">
+                        <p class="card-text text-center">Renewed</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/top-brands.png" alt="Top Brand">
+                    <div class="card-body">
+                        <p class="card-text text-center">Top Brand</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/built-for-speed.png" alt="Built For Speed">
+                    <div class="card-body">
+                        <p class="card-text text-center">Built For Speed</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/large-storage.png" alt="Large Storage">
+                    <div class="card-body">
+                        <p class="card-text text-center">Large Storage</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/large-screens.png" alt="Large Screen">
+                    <div class="card-body">
+                        <p class="card-text text-center">Large Screen</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/power-all-day.png" alt="Power All Day">
+                    <div class="card-body">
+                        <p class="card-text text-center">Power All Day</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Stay Connected/best-for-photos.png" alt="Best For Photos">
+                    <div class="card-body">
+                        <p class="card-text text-center">Best For Photos</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exciting Offers and Games -->
+    <div class="container-fluid offersGames">
+        <div class="row">
+            <h3>Exciting Offers & Games</h3>
+        </div>
+        <div class="row offersGamesRow">
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-fluid" src="images/Exciting Offers/left1.gif" alt="treasureHunt">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-fluid" src="images/Exciting Offers/right1.gif" alt="jumdle">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-fluid" src="images/Exciting Offers/left2.png" alt="dailyCheckIn">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-fluid" src="images/Exciting Offers/right2.png" alt="flappyBird">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Home Appliances -->
+    <div class="container-fluid homeAppliances">
+        <div class="row">
+            <h3>Home Appliances</h3>
+        </div>
+        <div class="row homeAppliancesRow">
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/blenders.png" alt="Blenders">
+                    <div class="card-body">
+                        <p class="card-text text-center">Blenders</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/microwaves.png" alt="Microwaves">
+                    <div class="card-body">
+                        <p class="card-text text-center">Microwaves</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/cookers.png" alt="Cookers">
+                    <div class="card-body">
+                        <p class="card-text text-center">Cookers</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/air-conditioners.png" alt="Air Conditioners">
+                    <div class="card-body">
+                        <p class="card-text text-center">Air Conditioners</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/fans.png" alt="Fans">
+                    <div class="card-body">
+                        <p class="card-text text-center">Fans</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/washers.png" alt="Washers">
+                    <div class="card-body">
+                        <p class="card-text text-center">Washers</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/juicers-dispensers.png" alt="Juicer & Dispensers">
+                    <div class="card-body">
+                        <p class="card-text text-center">Juicer & Dispensers</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/toasters-ovens.png" alt="Toasters & Ovens">
+                    <div class="card-body">
+                        <p class="card-text text-center">Toasters & Ovens</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/fridges-freezers.png" alt="Fridges & Freezers">
+                    <div class="card-body">
+                        <p class="card-text text-center">Fridges & Freezers</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/washers.png" alt="Washers">
+                    <div class="card-body">
+                        <p class="card-text text-center">Washers</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/cookware.png" alt="Cookware">
+                    <div class="card-body">
+                        <p class="card-text text-center">Cookware</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="images/Home Appliance/food-processors.png" alt="Food Processors">
+                    <div class="card-body">
+                        <p class="card-text text-center">Food Processors</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pre-FootNote images -->
+    <div class="container-fluid pFNimages">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#">
+                    <img class="img-fluid" src="images/preFootage1/topCenter.jpg" alt="Global Store">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-fluid" src="images/preFootage1/downleft.png" alt="JForce">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-fluid" src="images/preFootage1/downright.jpg" alt="Order By Phone">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pre FootNote Words and all -->
+
+    <article class="footer">
+        <div class="container-fluid pFNWordsAll">
+            <div>
+                <h6>Jumia: Online Shopping in Nigeria - No. 1 Shopping Destination</h6>
+                <p> Jumia is your number one online shopping site in Nigeria. 
+                    We are an online store where you can purchase all your electronics, as well as books, home appliances, kiddies items, fashion items for men, women, and children; cool gadgets, computers, groceries, automobile parts, and more on the go. 
+                    What more? You can have them delivered directly to you. 
+                    Shop online with great ease as you pay with JumiaPay which guarantees you the safest online shopping payment method, allowing you to make stress free payments. 
+                    Whatever it is you wish to buy, Jumia offers you all and lots more at prices which you can trust. 
+                    Jumia has payment options for everyone irrespective of taste, class, and preferences. 
+                    Here, you also have the option to make your payment on delivery for extra convenience. 
+                    Shopping online in Nigeria is easy and convenient with Jumia. 
+                    We provide you with a wide range of products you can trust. 
+                    Take part in the deals of the day and discover the best prices on a wide range of products.</p>
+    
+                <p> Protect yourself from getting sick by avoiding unprotected and unsolicited contact with sick people. 
+                    Shop <a href="#">surgical masks, </a><a href="#"> thermometers, </a><a href="#"> hand sanitizers, </a><a href="#">wipes, </a><a href="#">purifiers, </a><a href="#">hand wash,</a> disinfectants, and <a href="#">surgical hand gloves</a> and other <a href="#">household essentials</a> at competitive prices on Jumia Nigeria.
+                    Get discounts on a large collection of different items when you pick one today and do not forget to <a href="#">shop groceries online</a> from our <a href="#">top grocery items</a> here on Jumia Nigeria either. 
+                    Shop for <a href="#">safety items</a> here on Jumia Nigeria</p>
+
+                <p> Official Stores  is here! 
+                    You can now shop several genuine & 100% Authentic products from Top Brands: 
+                    Samsung, Apple, Microsoft , Michelin Tyres, Scanfrost HP , P&G Intel, Xiaomiand more shipped to you directly from official distributors with full warranty and returns available up to 15 days</p>
+
+                <h6>Buy Mobile Phones, Fashion, Electronics, Appliances & more on Jumia</h6>
+
+                <p> Be in the loop this year with new products and offers from Jumia. 
+                    Brand your home with various electronics and home and office appliances from Binatone, Panasonic, Samsung, Toshiba, Sony, and LG. 
+                    Get top phone brands all the latest gadgets and devices for school projects from brands like HP, IMose, Lenovo, Samsung, and Apple with no hassles as you enjoy fast delivery service even to your institution. 
+                    Jumia Nigeria also offers the latest innovative mobile phones such as Tecno Spark 4, Samsung A51 , Samsung S20, Samsung S20 Plus, Samsung S20 Ultra Gionee M11, Tecno Camon 12, Tecno Camon 12 Pro, Samsung A30, Infinix Hot 8, Nokia 7.2, Xiaomi Note 10 Pro, iPhone 11, iPhone 11 Pro Max, Huawei Y9s, Samsung S9, as well as the latest Samsung S10 series , Samsung Note 10 & 10+, Samsung Note 10 Lite, Samsung A71, Samsung S20 Phones, Samsung S20, Tecno Camon 15, Samsung S20 Plus, Samsung S20 Ultra  and more. 
+                    Also take advantage of computing products available to own laptops like the Dell Inspiron, printers and other storage devices such as hard drives at affordable prices. 
+                    Get Professional Services online like insurance services, medical services, IT Training, educational services and so much more.</p>
+
+                <p>Jumia Nigeria offers deals and discounts and never ceases to form campaigns all year around, all for the satisfaction and joy of our customers. Our newsletter subscribers and Facebook fans get to know all of our offers before anyone else such as Mobile & Tech Week, Ramadan, and Jumia Anniversary.</p>
+            </div>
+        </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid footer">
+            <div class="row footerR1">
+                <div class="col-md-2 col-lg-2">
+                    <a href="jumia.html">
+                        <img class="img-fluid" src="images/HomePageImages/jumiaLogoLight.png" alt="Jumia Logo">
+                    </a>
+                </div>
+                <div class="col-md-5 col-lg-6">
+                    <h6>NEW TO JUMIA?</h6>
+                    <p>Subscribe to our newsletter to get updates on our latest offers!</p>
+                    <input type="email" class="form-control" name="footEmail" id="footEmail" placeholder="Enter Email Address">
+                    <input type="button" value="MALE" class="btn-outline-warning btn-xm">
+                    <input type="button" value="FEMALE" class="btn-outline-warning btn-xm">
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="footerR2">
+                        <img src="images/others/logo.png" alt="jumia Logo">
+                        <div>
+                            <strong>DOWNLOAD JUMIA FREE APP</strong><br>
+                            Get access to exclusive offers!
+                        </div>
+                    </div>
+                    <div class="footerR3">
+                        <a href="#https://itunes.apple.com/app/id925015459?mt=8">
+                            <img src="images/others/download on apple store.png" alt="Download Jumia app on Apple Store">
+                        </a>
+                        <a href="#https://play.google.com/store/apps/details?id=com.jumia.android&referrer=adjust_reftag%3DcdTxOjM">
+                            <img src="images/others/download on play store.png" alt="Download Jumia app on Play Store">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row footerR4">
+                <div class="col-md-3">
+                    <h5>LET US HELP YOU</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#">How to shop on Jumia?</a>
+                        </li>
+                        <li>
+                            <a href="#">Delivery options and timelines</a>
+                        </li>
+                        <li>
+                            <a href="#">How to return a product on Jumia?</a>
+                        </li>
+                        <li>
+                            <a href="#">Corporate and bulk purchases</a>
+                        </li>
+                        <li>
+                            <a href="#">Report a Product</a>
+                        </li>
+                        <li>
+                            <a href="#">Ship your package anywhere in Nigeria</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>ABOUT JUMIA</h5>
+                    <ul>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Jumia careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Jumia Express</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms and Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy and Cookie Notice</a>
+                        </li>
+                        <li>
+                            <a href="#">Jumia Prime</a>
+                        </li>
+                        <li>
+                            <a href="#">Jumia Global</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>MAKE MONEY WITH JUMIA</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Sell on Jumia</a>
+                        </li>
+                        <li>
+                            <a href="#">Become a Sales Consultant</a>
+                        </li>
+                        <li>
+                            <a href="#">Become a Jumia Vendor Service Provider</a>
+                        </li>
+                        <li>
+                            <a href="#">Become a Logistics Service Partner</a>
+                        </li>
+                        <li>
+                            <a href="#">Join the Jumia DA Academy</a>
+                        </li>
+                        <li>
+                            <a href="#">Join the Jumia KOL Program</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>JUMIA INTERNATIONAL</h5>
+                    <div class="col-md-6">
+                        <div class="row jInternational">
+                            <div class="col-6">
+                                <ul>
+                                    <li>
+                                        <a href="#">Algeria</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Egypt</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ghana</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ivory Coast</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kenya</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Morocco</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="jInternationalUl">
+                                    <li>
+                                        <a href="#">Senegal</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tunisia</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Uganda</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">South Africa</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Zando</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <!-- the sell jumia part -->
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="col-md-2">Sell on Jumia</div>
+                        <!-- Space between -->
+                        <div class="col-md-2"></div>
+                        <!-- Rest of the Shit -->
+                        <div class="col-md-1">JUMIA</div>
+                        <div class="col-md-1">PAY</div>
+                        <div class="col-md-1">FOOD</div>
+                        <div class="col-md-1">PARTY</div>
+                        <div class="col-md-1">PRIME</div>
+                        <div class="col-md-1">LOGISTICS</div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <hr class="my-4">
+            </div>
+
+            <!-- 3rd row footer -->
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>JOIN US ON</h5>
+                </div>
+
+                <div class="col-md">
+                    <h5>PAYMENT METHODS & DELIVERY PARTNERS</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

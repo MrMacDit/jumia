@@ -1,0 +1,351 @@
+body {
+    background-color: thistle;
+}
+
+/* img {
+    width: 100%;
+} */
+/* Nav coloration */
+.bg-color {
+    background-color: #000;
+}
+
+.nav-color a {
+    color: #fff;
+}
+
+.dropdown-menu a {
+    color: #000;
+    text-align: left;
+    font-size: small;
+}
+
+/* Side bar styling */
+.sideBar {
+    background-color: #000;
+    height: 100%;
+    width: 5%;
+    position: fixed;
+    color: whitesmoke;
+}
+
+.sideBar li {
+    list-style: none;
+    padding-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sideBar a {
+    text-decoration: none;
+}
+
+/* GENERAL CONTAINER STYLE */
+.container-fluid {
+    height: 100%;
+    width: 93%;
+    padding: auto;
+    margin: 1em;
+    margin-left: auto;
+}
+
+/* CATEGORY STYLING */
+.catTolu {
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    padding: auto;
+    max-height: auto;
+    border-radius: 8px;
+    height: auto;
+    width: 100%;
+}
+
+.catTolu li {
+    padding: .22em;
+    text-align: left;
+    list-style: none;
+}
+
+.catTolu li a {
+    color: black;
+    text-decoration: none;
+    margin-left: -1.5em;
+    font-size: auto;    
+}
+
+
+
+/* Carousel */
+.carousel {
+    height: auto;
+    width: 100%;
+    border: 3px solid #000;
+
+}
+
+.carousel img {
+    height: auto;
+    width: 100%;
+}
+
+.carousel-inner .carousel-item {
+    border: 5px dotted red;
+    height: auto;
+    width: 100%;
+}
+
+/* rJUMIA designing */
+.rJUMIA img {
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+}
+
+                /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
+/* Jumia Personal Packages */
+
+.Packages a {
+    display: block;
+    background: white;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000;
+    padding: 8px 120px 8px 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+            /* xxxxxxxxxxxxxxxxxxxxxxxxxxxMidsized sedan lolxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.SFOCollections {
+    height: 100%;
+}
+
+.SFOCollections h3 {
+    background-color: #F28500;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.SFOCollections p {
+    font-size: 13px;
+}
+
+.SFOCollections a {
+    text-decoration: none;
+    color: #000;
+}
+
+.SFOCollectionsRow {
+    margin-top: -.4em;
+}
+
+.SFOCollectionsRow .card {
+    margin-bottom: 1em;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxTech Brandxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.techBrand {
+    height: 100%;
+}
+
+.techBrand h3 {
+    background-color: #F28500;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.techBrandRow {
+    margin-top: -.5em;
+}
+
+.techBrandRow img {
+    width: 100%;
+    height: 90%;
+}
+
+/* .techBrand a:hover {
+    background-color: blue;
+} */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxStay Connectedxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.stayConnected {
+    height: 100%;
+}
+
+.stayConnected h3 {
+    background-color: #F28500;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.stayConnected p {
+    font-size: 13px;
+}
+
+.stayConnected a {
+    text-decoration: none;
+    color: #000;
+}
+
+.stayConnectedRow {
+    margin-top: -.4em;
+}
+
+.stayConnectedRow .card {
+    margin-bottom: 1em;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxOffers and Gamesxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.offersGames {
+    height: 100%;
+}
+
+.offersGames h3 {
+    
+    background-color: #F28500;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.offersGamesRow {
+    margin-top: -.4em;
+}
+
+.offersGamesRow img {
+    width: 100%;
+    height: 90%;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxHome Appliancesxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.homeAppliances {
+    height: 100%;
+}
+
+.homeAppliances h3 {
+    background-color: #F28500;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.homeAppliances p {
+    font-size: 13px;
+}
+
+.homeAppliances a {
+    text-decoration: none;
+    color: #000;
+}
+
+.homeAppliancesRow {
+    margin-top: -.4em;
+}
+
+.homeAppliancesRow .card {
+    margin-bottom: 1em;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxpre-FootNote imagesxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.pFNimages {
+    height: 100%;
+}
+
+.pFNimages img {
+    width: 100%;
+    height: 90%;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxPre FootNote Words and allxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.pFNWordsAll {
+    height: 100%;
+    text-align: justify;
+    font-size: 14px;
+    border: 2px solid wheat;
+    background-color: wheat;
+}
+
+.pFNWordsAll h6 {
+    padding-bottom: 1em;
+}
+
+/* .pFNWordsAll p {
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+.pFNWordsAll a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #000;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxfooterxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.footer {
+    height: 100%;
+}
+
+.footerR1 {
+    background-color: #fff;
+    color: #040008;
+    padding: 2em;
+}
+
+.footerR2 {
+    color: #000;
+    padding: 5px;
+}
+
+.footerR2 img {
+    clear: both;
+}
+
+.footerR2 div {
+    font-size: smaller;
+    text-align: center;
+    float: right;
+    margin-right: 7em;
+}
+
+.footerR4 li {
+    list-style: none;
+    text-align: left;
+    margin-left: -2.5em;
+}
+
+.footerR4 a {
+    color: #fff;
+    font-size: small;
+    /* font-family: 'Times New Roman', Times, serif; */
+    padding: -2px;
+}
+
+.footerR4 div {
+    background-color: #000;
+    color: #fff;
+}
+
+.jInternational {
+    margin-left: -1.7em;
+}
+
+.jInternationalUl {
+    margin-left: 2em;
+}
+
+hr {
+    background-color: #fff;
+}
